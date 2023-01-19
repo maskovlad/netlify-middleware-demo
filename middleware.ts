@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { MiddlewareRequest } from "@netlify/next";
 
-export async function middleware(nextRequest:NextRequest) {
+export async function middleware(nextRequest: NextRequest) {
   const pathname = nextRequest.nextUrl.pathname
 
   const middlewareRequest = new MiddlewareRequest(nextRequest)
